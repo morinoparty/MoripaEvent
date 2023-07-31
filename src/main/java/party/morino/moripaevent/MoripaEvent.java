@@ -31,6 +31,10 @@ public class MoripaEvent extends JavaPlugin {
         this.injector = Guice.createInjector(new MoripaEventModule(this));
     }
 
+    public static boolean vaultLoaded() {
+        return Bukkit.getPluginManager().isPluginEnabled("Vault");
+    }
+
     @Override
     public void onLoad() {
         var config = this.injector.getInstance(ConfigFactory.class);

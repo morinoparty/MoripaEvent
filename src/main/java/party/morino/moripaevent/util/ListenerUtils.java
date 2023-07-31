@@ -13,13 +13,13 @@ import static org.bukkit.Bukkit.getServer;
 @DefaultQualifier(NonNull.class)
 public final class ListenerUtils {
 
+    private static final Set<Class<? extends Listener>> LISTENER_CLASSES = Set.of(
+            // PlayerInteractListener.class
+    );
+
     private ListenerUtils() {
         throw new AssertionError();
     }
-
-    private static final Set<Class<? extends Listener>> LISTENER_CLASSES = Set.of(
-
-    );
 
     public static void loadListeners(
             final Injector injector,

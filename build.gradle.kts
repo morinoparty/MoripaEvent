@@ -29,7 +29,7 @@ dependencies {
     paperLibrary("com.google.inject", "guice", "7.0.0")
 }
 
-version = "0.2.2"
+version = "0.1.0"
 
 paper {
     authors = listOf("Unitarou")
